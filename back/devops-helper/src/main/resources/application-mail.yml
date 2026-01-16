@@ -1,0 +1,5 @@
+mail:
+  host: 10.0.7.210
+  port: 587
+  userName: zhangsan@unicloud.com
+  password: MTIzNDU2

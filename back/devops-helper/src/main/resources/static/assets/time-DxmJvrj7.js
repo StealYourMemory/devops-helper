@@ -1,0 +1,1 @@
+function $(r,a=!1){const t=new Date(r);a&&t.setHours(t.getHours()+8);const u=t.getFullYear(),o=t.getMonth()+1,e=t.getDate(),s=t.getHours(),n=t.getMinutes(),c=t.getSeconds(),d=o<10?"0"+o:o,f=e<10?"0"+e:e,m=s<10?"0"+s:s,g=n<10?"0"+n:n,i=c<10?"0"+c:c;return`${u}-${d}-${f} ${m}:${g}:${i}`}export{$ as t};

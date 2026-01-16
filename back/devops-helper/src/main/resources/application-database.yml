@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    driver-class-name: org.sqlite.JDBC
+    url: jdbc:sqlite:devops_helper.sqlite
+  jpa:
+    show-sql: false
+    database-platform: org.hibernate.community.dialect.SQLiteDialect
+  sql:
+    init:
+      mode: always
+      schema-locations:
+        - classpath:sql/create_table.sql

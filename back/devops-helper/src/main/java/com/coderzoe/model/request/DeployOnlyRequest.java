@@ -1,0 +1,33 @@
+package com.coderzoe.model.request;
+
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+/**
+ * @author yinhuasheng
+ * @date 2024/8/19 17:58
+ */
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class DeployOnlyRequest {
+    /**
+     * 项目名
+     */
+    @NotEmpty
+    private String projectName;
+
+    /**
+     * 打包的tag
+     */
+    @NotEmpty
+    private String tag;
+    /**
+     * 环境
+     */
+    @NotNull
+    private String environment;
+}

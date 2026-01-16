@@ -1,0 +1,1 @@
+export type WorkIssueStatusType = 'ALL' | 'FAIL' | 'SUCCESS'

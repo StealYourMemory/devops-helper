@@ -1,0 +1,65 @@
+k8s:
+  # k8s namespace
+  k8s-name-space: default
+
+  # 基础服务器配置
+  base-env: NEW_YFB
+  base-device-ip: 10.247.146.2
+  save-image-path: /home/uca-network/devops-helper/k8s/
+  #代理路径
+  save-proxy-path: /home/uca-network/devops-helper/proxy/
+
+  # 初始化入库的k8s服务器环境
+  init:
+    init-env-and-server:
+      NEW_YFB:
+        env-name: NEW_YFB
+        env-description: 新预发布
+        env-type: REBIRTH_V1
+        server-set:
+          - ip: 10.247.146.2
+            port: 22
+            user-name: root
+            password: dW5pY2xvdWQ=
+          - ip: 10.247.146.4
+            port: 22
+            user-name: root
+            password: dW5pY2xvdWQ=
+      CHENGGUI:
+        env-name: CHENGGUI
+        env-description: 城轨
+        env-type: NEED_DOCKER_PULL
+        server-set:
+          - ip: 10.246.146.152
+            port: 22
+            user-name: root
+            password: dW5pY2xvdWQ=
+          - ip: 10.246.146.153
+            port: 22
+            user-name: root
+            password: dW5pY2xvdWQ=
+          - ip: 10.246.146.154
+            port: 22
+            user-name: root
+            password: dW5pY2xvdWQ=
+      DEVELOP:
+        env-name: DEVELOP
+        env-description: 开发环境
+        env-type: REBIRTH_V2
+        server-set:
+          - ip: 10.254.7.10
+            port: 22
+            user-name: root
+            password: UGFzc3cwcmRAX1VuaQ==
+          - ip: 10.254.7.11
+            port: 22
+            user-name: root
+            password: UGFzc3cwcmRAX1VuaQ==
+          - ip: 10.254.7.12
+            port: 22
+            user-name: root
+            password: UGFzc3cwcmRAX1VuaQ==
+
+
+
+

@@ -1,0 +1,9 @@
+kind: Endpoints
+apiVersion: v1
+metadata:
+  name: %s
+subsets:
+  - addresses:
+      - ip: %s
+    ports:
+      - port: %d

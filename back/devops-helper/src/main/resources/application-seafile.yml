@@ -1,0 +1,20 @@
+seafile:
+  user-name: zhangsan@unicloud.com
+  password: MTIzNDU2
+  repository-id: 46850dcf-bc23-4652-a251-fcced38a97a8
+  base-path: SDN控制器
+  archive-types:
+    - YAML
+    - SQL
+    - SHELL
+    - REQUIREMENT
+  archive-ignore-paths:
+    - name: SLB镜像
+      match-type: CONTAINS
+    - name: final
+      match-type: CONTAINS
+  archive-sql-names:
+    - name: basic
+      match-type: CONTAINS
+    - name: driver
+      match-type: CONTAINS

@@ -1,0 +1,4 @@
+gitlab:
+  user-name: zhangsan@unicloud.com
+  password: MTIzNDU2
+  get-branches-url: /moove/uni-network/%s/refs?sort=updated_desc&ref=master&search=

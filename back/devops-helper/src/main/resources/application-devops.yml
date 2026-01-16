@@ -1,0 +1,6 @@
+devops:
+  base-url: http://10.0.7.210
+  user-name: zhangsan@unicloud.com
+  password: MTIzNDU2
+  login-type: external
+  project-id: 446919227341815662

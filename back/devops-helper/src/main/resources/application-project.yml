@@ -1,0 +1,24 @@
+devops-helper:
+  project:
+    # 项目的配置
+    projects:
+      - name: core-basic
+        gitlab-url: network-core-basic
+        jenkins-url: uca-network-core-basic
+        k8s-deployment: uca-network-core-basic-deployment
+        k8s-deployment-image: harbor-local.unicloudsrv.com/moove/uca-network-core-basic
+      - name: slb
+        gitlab-url: network-slb
+        jenkins-url: uca-network-slb
+        k8s-deployment: uca-network-slb-deployment
+        k8s-deployment-image: harbor-local.unicloudsrv.com/moove/uca-network-slb
+      - name: resource-inspection
+        gitlab-url: network-resource-inspection
+        jenkins-url: uca-network-resource-inspection
+        k8s-deployment: uca-network-resource-inspection-deployment
+        k8s-deployment-image: harbor-local.unicloudsrv.com/moove/uca-network-resource-inspection
+      - name: scheduler
+        gitlab-url: uca_iaas_scheduler
+        jenkins-url: uca-iaas-scheduler
+        k8s-deployment: uca-iaas-scheduler-deployment
+        k8s-deployment-image: harbor-local.unicloudsrv.com/moove/uca-iaas-scheduler

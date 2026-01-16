@@ -1,0 +1,24 @@
+server:
+  port: 8765
+spring:
+  application:
+    name: devops-helper
+  profiles:
+    include:
+      - database
+      - project
+      - gitlab
+      - jenkins
+      - k8s
+      - devops
+      - seafile
+      - mail
+  threads:
+    virtual:
+      # JDK21 虚拟线程功能
+      enabled: true
+  main:
+    keep-alive: true
+logging:
+  file:
+    path: ./log

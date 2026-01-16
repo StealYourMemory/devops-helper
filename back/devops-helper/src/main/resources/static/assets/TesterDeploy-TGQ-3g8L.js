@@ -1,0 +1,1 @@
+import{_ as s,o,c as t,F as a,a as e}from"./index-B8KVQuq1.js";const c={},n=e("div",null,"todo 测试部署",-1),l=e("p",null,"主要功能是开发联动seafile，展示seafile下的目录和文件 测试直接选中seafile下某个文件，选择环境就直接将yaml更新部署到该环境",-1);function r(_,f){return o(),t(a,null,[n,l],64)}const d=s(c,[["render",r]]);export{d as default};
